@@ -1,0 +1,13 @@
+[phases.setup]
+nixPkgs = ["openssl", "pkg-config", "rust-bin.stable.latest.default", "gcc"]
+
+[variables]
+RUST_BACKTRACE = "1"
+
+[phases.install]
+cmds = [
+  "cargo build --release"
+]
+
+[start]
+cmd = "./target/release/rust_indexer"
