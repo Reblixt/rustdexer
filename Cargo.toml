@@ -5,7 +5,7 @@ edition = "2024"
 
 [dependencies]
 dotenv = "0.15.0"
-sui_sdk = { git = "https://github.com/mystenlabs/sui", package = "sui-sdk" }
+sui_sdk = { git = "https://github.com/mystenlabs/sui", rev = "2303d21", package = "sui-sdk" }
 tokio = { version = "1.2", features = ["full"] }
 anyhow = "1.0"
 futures = "0.3.31"
@@ -19,3 +19,5 @@ sea-orm = { version = "1.1.12", features = [
   "with-uuid",
   "with-chrono",
 ] }
+chrono = { version = "0.4.42", features = ["serde"] }
+move-core-types = { git = "https://github.com/mystenlabs/sui", rev = "2303d21" }

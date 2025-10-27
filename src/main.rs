@@ -18,6 +18,7 @@ const API_URL: &str = "https://weathered-soft-frost.sui-mainnet.quiknode.pro/c39
 mod constants;
 mod entity;
 mod processor;
+mod store;
 
 #[derive(Clone)]
 pub struct AppState {
